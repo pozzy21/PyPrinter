@@ -37,7 +37,7 @@ def clicked4():
 def switchState():
     if btn1['state'] == DISABLED:
         btn1['state'] = NORMAL
-        time.sleep(0.5)
+        time.sleep(1)
         lbl.configure(text="Ready")
     else:
         btn1['state'] = DISABLED
@@ -88,7 +88,6 @@ def get_kolvo_str():
     lbl5.configure(text=f"Количество копий: {count} ")
 
 
-
 def print1():
     i = 0
     while i < int(count):
@@ -128,7 +127,7 @@ btn3.grid(column=2, row=1)
 btn4.grid(column=2, row=0)
 btn5.grid(column=4, row=1)
 btn6.grid(column=2, row=3)
-photo = PhotoImage(file = "123.png")
+photo = PhotoImage(file="123.png")
 window.iconphoto(False, photo)
 
 
